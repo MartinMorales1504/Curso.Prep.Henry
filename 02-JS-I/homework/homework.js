@@ -216,7 +216,13 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.touppercase === 'A' || letra.touppercase === 'E' || letra.touppercase === 'I' || letra.touppercase === 'O' || letra.touppercase === 'U') {
+  if (letra.length > 1) {
+    return 'Dato incorrecto'
+  }
+
+  mayus = letra.toUpperCase();
+
+  if (mayus === 'A' || mayus === 'E' || mayus === 'I' || mayus === 'O' || mayus === 'U') {
     return "Es vocal"
   }
   return 'Dato incorrecto'
