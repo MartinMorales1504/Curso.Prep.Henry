@@ -216,16 +216,10 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.Lowercase === 'a' || letra.Lowercase === 'e' || letra.Lowercase === 'i' || letra.Lowercase === 'o' || letra.Lowercase 
-    === 'u') {
-    return 'Es vocal'
+  if (letra.touppercase === 'A' || letra.touppercase === 'E' || letra.touppercase === 'I' || letra.touppercase === 'O' || letra.touppercase === 'U') {
+    return "Es vocal"
   }
-  else if (letra.lenght > 1){
-    return 'Dato incorrecto'
-  }
-  else {
-    return 'Dato incorrecto'
-  }
+  return 'Dato incorrecto'
 }
 
 
